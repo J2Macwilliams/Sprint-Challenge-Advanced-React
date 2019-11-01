@@ -14,10 +14,10 @@ const Navbar = () => {
     <nav className="navbar">
       
       <h1 className="title">Women's World Cup</h1>
-      <NavLink exact to='/' activeClassName="activeNavButton" className="navLink" >
+      {/* <NavLink exact to='/' activeClassName="activeNavButton" className="navLink" >
         Home
       </NavLink>
-      <NavLink to='/club' activeClassName="activeNavButton" className="navLink" >Players</NavLink>
+      <NavLink to='/club' activeClassName="activeNavButton" className="navLink" >Players</NavLink> */}
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}

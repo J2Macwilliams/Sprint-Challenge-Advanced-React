@@ -17,7 +17,7 @@ class Club extends Component {
         axios
             .get('http://localhost:5000/api/players')
             .then(response => {
-                console.log(response)
+                // console.log(response)
                 this.setState({
                     players: response.data
                 })

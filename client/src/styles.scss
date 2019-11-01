@@ -268,3 +268,15 @@ img {
   box-shadow: 0 0 20px 5px #f68819;
   
 }
+.playerCard {
+  padding: 2%;
+  margin: 1%;
+  border: 1px solid red;
+  width: 20%;
+  border-radius: 8px;
+}
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}

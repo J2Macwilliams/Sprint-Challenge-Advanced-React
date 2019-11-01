@@ -1,103 +1,47 @@
 import React from 'react';
 
-import { render } from "@testing-library/react";
-import App, { {props.data.map}, toggleMode, componentDidMount   } from './App';
+// import * as rtl from "@testing-library/react";
+import { render } from  "@testing-library/react";
+import App from './App';
 
 
-
-
+//1
 test("renders without crashing", () => {
-
   render(<App />);
 });
 
-test('In Players JS, expect props from club to be mapped over array and return all the names ', () => {
-  let actual;
-  let expected;
-  actual={props.data.map((player, id) =>
+//2
+test("HDoes a Home exist?", () => {
+   const { findAllByDisplayValue } = render(<App />)
+  
+  findAllByDisplayValue(/home/)
+ })
 
-    <div key={id} >
-        <h2>#{id + 1} {player.name}</h2>
-        <h4>{player.country}</h4>
-    </div>
-)};
-  expected= [];
-  expect(actual).toBe(expected);
-  expect(actual).not.toBe({});
+ //3
+test("Is the a toggle?", () => {
+  const { findAllByDisplayValue } = render(<App />);
+
+  findAllByDisplayValue(/toggle/i);
 })
 
+//4
+test("Is there a Womens world Cup image?", () => {
+  const { findByAltText } = render(<App />)
 
-test ('expect the toggle to turn on dark mode', () =>{
-  let actual;
-  let expected;
-  actual = toggleMode = e => {
-      e.preventDefault();
-      setDarkMode(!darkMode);
-    };
-    expected=(!darkMode)
-    expect(actual).toBe(expected);
-  expect(actual).not.toBe(darkMode);
+  findByAltText(/wwc/)
 })
 
-test ('Expect to take in an [] from the API ', () => {
-  let actual;
-  let expected;
-  acutal = componentDidMount(){
-    axios
-        .get('http://localhost:5000/api/players')
-        .then(response => {
-            console.log(response)
-            this.setState({
-                players: response.data
-            })
-        })
-        .catch(err => console.log(err));
-}
-expected = state = {
-  players: [],
-}
-expect(actual).toBe(expected);
-expect(actual).not.toBe({});
+//5
+test("Does a Home exist?", () => {
+  const { findAllByDisplayValue } = render(<App />)
+
+  findAllByDisplayValue(/home/)
 })
 
-// test("Does Players exist?", () => {
-//   const { getByText } = render(<App />);
+//6
+test("Is there a h1 Title in navBar", () => {
+  const { queryByText } = render(<App />)
 
-//   getByText(/players/i);
-// })
+  queryByText(/h1/)
+})
 
-// test("Is the a toggle?", () => {
-//   const { findAllByDisplayValue } = render(<App />);
-
-//   findAllByDisplayValue(/toggle/i);
-// })
-
-// test("Is there a Womens world Cup image?", () => {
-//   const { findByAltText } = render(<App />)
-
-//   findByAltText(/wwc/)
-// })
-
-// test("HDoes a Home exist?", () => {
-//   const { findAllByDisplayValue } = render(<App />)
-
-//   findAllByDisplayValue(/home/)
-// })
-
-// test("Is there a h1 Title in navBar", () => {
-//   const { queryByText } = render(<NavBar />)
-
-//   queryByText(/h1/)
-// })
-
-// test("Does Dark mode change a color?", () => {
-//   const { queryByDisplayValue } = render(<Club />)
-
-//   queryByDisplayValue(/color/)
-// })
-
-// test("Does info come out of local storage?", () => {
-//   const { getByText } = render(<App />)
-
-//   getByText(/parse/)
-// })

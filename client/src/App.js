@@ -10,11 +10,11 @@ import Club from './components/Club';
 function App() {
   return (
     <div className="App">
-      <Route exact path='/' component={Home} /> 
+      {/* <Route exact path='/' component={Home} /> 
 
-      <Route path='/club' render={(props) => 
-      <Club {...props}/>} />  
-    
+      <Route path='/club' render={(props) =>  */}
+      {/* <Club {...props}/>} />   */}
+      <Club />
     </div>
   );
 }
