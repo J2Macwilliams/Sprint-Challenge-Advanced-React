@@ -1,14 +1,18 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 
-import Club from './components/Club';
+import Home from './components/Home';
+import Players from './components/Players';
+
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Route path='' render={(props) => <Club {...props}/>}/>
+      <Route exact path='/' component={<Home />} />
+      <Route path='/players' component={<Players/>}/>
+
     </div>
   );
 }
