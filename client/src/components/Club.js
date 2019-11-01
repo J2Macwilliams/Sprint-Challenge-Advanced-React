@@ -8,7 +8,7 @@ import Navbar from './Navbar'
 class Club extends Component {
     state = {
         players: [],
-        name: ''
+       
 
     }
 

@@ -1,9 +1,8 @@
 import React from 'react';
 
 import { render } from "@testing-library/react";
-import App, { {props.data.map}, toggleMode,   } from './App';
-// import NavBar from './components/Navbar';
-// import Club from './components/Club';
+import App, { {props.data.map}, toggleMode, componentDidMount   } from './App';
+
 
 
 
@@ -37,9 +36,29 @@ test ('expect the toggle to turn on dark mode', () =>{
     };
     expected=(!darkMode)
     expect(actual).toBe(expected);
-  expect(actual).not.toBe({});
+  expect(actual).not.toBe(darkMode);
 })
 
+test ('Expect to take in an [] from the API ', () => {
+  let actual;
+  let expected;
+  acutal = componentDidMount(){
+    axios
+        .get('http://localhost:5000/api/players')
+        .then(response => {
+            console.log(response)
+            this.setState({
+                players: response.data
+            })
+        })
+        .catch(err => console.log(err));
+}
+expected = state = {
+  players: [],
+}
+expect(actual).toBe(expected);
+expect(actual).not.toBe({});
+})
 
 // test("Does Players exist?", () => {
 //   const { getByText } = render(<App />);
