@@ -12,6 +12,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
+      
       <h1 className="title">Women's World Cup</h1>
       <NavLink exact to='/' activeClassName="activeNavButton" className="navLink" >
         Home
