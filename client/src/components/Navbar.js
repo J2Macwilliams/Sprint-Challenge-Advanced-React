@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+
 import useDarkMode  from '../hooks/useDarkMode';
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
       <NavLink exact to='/' activeClassName="activeNavButton" className="navLink" >
         Home
       </NavLink>
-      <NavLink to='/charts-page' activeClassName="activeNavButton" className="navLink" >Players</NavLink>
+      <NavLink to='/players' activeClassName="activeNavButton" className="navLink" >Players</NavLink>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
