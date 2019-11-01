@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className="navbar">
       
       <h1 className="title">Women's World Cup</h1>
-
+        <h2>Player Rank</h2>
     
       <div className="dark-mode__toggle">
         <div

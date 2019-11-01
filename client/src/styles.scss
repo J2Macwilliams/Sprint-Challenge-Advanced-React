@@ -260,8 +260,9 @@ img {
   padding: 2%;
   margin: 1%;
   border: 1px solid red;
-  width: 30%;
+  width: 25%;
   border-radius: 8px;
+  line-height: 1.5;
 }
 .grid {
   width: 100%;
@@ -273,4 +274,19 @@ img {
 .logo {
   width: 35%;
   margin: 5%;
+}
+.team {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.teamCard {
+  padding: 2%;
+  margin: 1%;
+  border: 1px solid blue;
+  background: inherit;
+  width: 30%;
+  border-radius: 8px;
+  line-height: 1.5;
 }

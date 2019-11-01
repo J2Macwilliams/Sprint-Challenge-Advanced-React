@@ -7,7 +7,7 @@ import "../styles.scss";
 const Players = (props) => {
     return (
         <div>
-            <img src={logo} alt="Womens World Cup Logo"className="logo" />
+            <img src={logo} alt="Womens World Cup Logo " className="logo" />
             <div className="grid">
                 {props.data.map((player, id) =>
 
