@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios';
 
 import Players from './Players'
+import Navbar from './Navbar'
 
 
 class Club extends Component {
@@ -27,6 +28,7 @@ class Club extends Component {
     render() {
         return (
             <div>
+                <Navbar />
                 <Players data={this.state.players} />
             </div>
         )

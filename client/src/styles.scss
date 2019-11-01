@@ -185,17 +185,17 @@ img {
 .navLink {
   font-size: 2.5rem;
   text-decoration: none;
-  color: #f68819;
+  color: red;
 }
 .navbar > a.activeNavButton {
-  background-color: #f68819;
+  background-color: red;
   color: white;
   padding: 1%;
   text-align: center;
   border-radius: 8px;
 } 
 .dark-mode__toggle {
-  background: papayawhip;
+  background: #00b6ec;
   border-radius: 50px;
   border: 1px solid black;
   height: 20px;
@@ -204,7 +204,7 @@ img {
 }
 
 .toggle {
-  background: #f68819;
+  background: red;
   border-radius: 50px;
   height: 18px;
   left: 0;
@@ -242,7 +242,7 @@ img {
 
 .dark-mode {
   color: #fff;
-  background-color: #313843;
+  background-color: #0467b1;
 
   .navbar {
     background-color: #1F2022;
@@ -254,19 +254,17 @@ img {
   color: inherit;
 }
 .container {
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  padding: 8%;
+  background: url('./img/WWC.jpg');
+  background-size: cover;
+  height: 95vh;
+  background-position: center;
 }
 .homeCard {
-  width: 60%;
-  text-align: center;
+  width: 80%;
   padding: 2%;
   margin: 10%;
   border: 1px solid white;
   border-radius: 0 9px 9px 9px ;
   box-shadow: 0 0 20px 5px #f68819;
-  line-height: 2;
+  
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 
-import NavBar from './Navbar';
 
 import "../styles.scss";
+
 
 const Players = (props) => {
     return (
         <div>
-            <NavBar />
+            
             {props.data.map((player, id) =>
 
                 <div key={id} >

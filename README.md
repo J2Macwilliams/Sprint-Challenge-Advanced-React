@@ -23,9 +23,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+Even it wasn’t down to hooks, I would choose to use functional components. They are easier to write, sure they don’t have the lifecycles, (and if no hooks) they can only accept state as props, but the are straight forward JS functions makes them so much easier to use.
+
 - [ ] Name three lifecycle methods and their purposes.
+
+Constructor - there to set up the state, and use super to accept the props.
+
+render - publishing of data to the DOM, it exists in both the mounting phase to setup the DOM and in the updating phase to wait and check on any State changes/updates to the function that would change the DOM.
+
+componentDidUpdate- is a verification that a change occurred from the render.
+
 - [ ] What is the purpose of a custom hook?
+
+the purpose is to make a hook into a component so that it is re-usable and easily accessible. 
+
 - [ ] Why is it important to test our apps?
+
+We must test our apps to ensure the integrity of the code, to check for bugs, to write better testable code, that performs under the scrutiny of the public, and handles all sorts of edge cases. The more unit tests, makes the integration tests easier to run, and gives the expensive E2E tests much better odds at passing.
+
+The more your tests resemble the way your software is used, the more confidence they can give you. —Guiding Principles React testing Library 
 
 ## Project Set Up
 

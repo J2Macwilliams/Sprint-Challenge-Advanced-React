@@ -16,7 +16,7 @@ const Navbar = () => {
       <NavLink exact to='/' activeClassName="activeNavButton" className="navLink" >
         Home
       </NavLink>
-      <NavLink to='/players' activeClassName="activeNavButton" className="navLink" >Players</NavLink>
+      <NavLink to='/club' activeClassName="activeNavButton" className="navLink" >Players</NavLink>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
