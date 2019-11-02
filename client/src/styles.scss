@@ -275,18 +275,9 @@ img {
   width: 35%;
   margin: 5%;
 }
-.team {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.teamCard {
-  padding: 2%;
-  margin: 1%;
-  border: 1px solid blue;
-  background: inherit;
-  width: 30%;
+
+.button {
+  font-size: 2rem;
   border-radius: 8px;
-  line-height: 1.5;
+  background:#fbd300;
 }
